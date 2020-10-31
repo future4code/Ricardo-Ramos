@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.boas-vindas {
+    padding-top: 4em;
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.botao-produto {
+    display: flex;
+    margin: auto;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: mediumblue;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+}
+
+img {
+    margin-top: 1em;
+}
+
+.footer-social {
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-social p {
+    color: whitesmoke;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+h2 {
+    padding: 0.4em;
+    text-align: center;
+}
+
+header {
+    background-color: mediumblue;
+    padding: 0.8em;
+}
+
+label {
+    width: 30vw;
+    text-align: right;
+}
+
+label+input {
+  width: 25vw;
+}
+
+label, input {
+    display: inline-block;
+}
+
+.mensagem {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8em;
+    padding-top: 4em;
+}
+
+.mensagem-final {
+    font-size: 2em;
+    padding-top: 4em;
+}
+
+.menu {
+    display: flex;
+    gap: 16em;
+    justify-content: center;
+}
+
+.produtos td {
+    font-size: 12px;
+}
+
+.subtitulo {
+    padding-top: 0.4em;
+}
+
+.tabela-funcionarios {
+    margin-top: 2em;
+}
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th, tr {
+    border: 1px solid #000;
+    padding: 0.4em;
+    text-align: center;
+}

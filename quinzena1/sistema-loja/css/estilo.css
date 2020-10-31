@@ -36,12 +36,22 @@ footer {
 }
 
 img {
-    margin-top: 1em;
+    margin-top: 0.4em;
 }
 
 .footer-social {
-    text-align: center;
-    padding: 1em;
+    align-items: center;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    padding: 0.4em;
+}
+
+.footer-social img {
+    height: auto;
+    max-width: 40px;
+    max-height: 30px;
+    width: auto;
 }
 
 .footer-social p {
@@ -49,9 +59,9 @@ img {
 }
 
 form {
-    width: 80%;
     margin: 0 auto;
     padding-top: 4em;
+    width: 80%;
 }
 
 h2 {
@@ -65,12 +75,12 @@ header {
 }
 
 label {
-    width: 30vw;
     text-align: right;
+    width: 30vw;
 }
 
 label+input {
-  width: 25vw;
+    width: 25vw;
 }
 
 label, input {

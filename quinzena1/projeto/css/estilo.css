@@ -1,0 +1,216 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* fim do reset */
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+#apresenta {
+    line-height: 3em;
+    padding-top: 4em;
+    text-align: center;
+}
+
+.atividade {
+    font-style: italic;
+}
+
+.barra-progresso {
+    background-color: rgb(183, 174, 174);
+    width: 30vh;
+  }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+
+.botao-enviar {
+    display: flex;
+    margin: auto;
+    margin-top: 1em;
+    background-color: rgb(44, 106, 242);
+}
+
+.css {
+    background-color: #059b0a;
+    font-size: 12px;
+    font-weight: bold;
+    width: 10%;
+}
+
+.eu, .jornada {
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(44, 106, 242);
+    bottom: 0;
+    display: grid;
+    min-height: 4vh;
+    position: fixed;
+    width: 100vw;
+}
+
+#footer-social {
+    display: flex;
+    gap: 2em;
+    margin: auto;
+    padding: 0.45em;
+}
+
+form {
+    margin: 0 auto;
+    padding-top: 4em;
+    width: 80%;
+}
+
+#grid-linguagens {
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+    padding-top: 4em;
+    width: 100%;
+}
+
+h6 {
+    padding-top: 0.8em;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.html {
+    background-color: #059b0a;
+    font-size: 12px;
+    font-weight: bold;
+    width: 30%;
+}
+
+.javascript {
+    background-color: #059b0a;
+    font-size: 12px;
+    font-weight: bold;
+    width: 0%;
+}
+
+.img-linguagens {
+    height: 180px;
+    width: 180px;
+}
+
+.img-portfolio {
+    width: 25%;
+    height: auto;
+}
+
+label {
+    text-align: right;
+    width: 30vw;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label+input {
+    width: 25vw;
+}
+
+form #mensagem {
+    height: 20vh;
+}
+
+li {
+    letter-spacing: 4px;
+    list-style: none;
+}
+
+nav {
+    background-color: rgb(44, 106, 242);
+    font-weight: bold;
+    padding: 0.45em;
+    top: 0;
+    width: 100vw;
+}
+
+nav a {
+    display: block;
+}
+
+.nome {
+    font-size: 52px;
+    padding-top: 0.4em;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 8em;
+    padding-left: 6em;
+}
+
+.conteudo-portfolio {
+    display: flex;
+}
+
+.texto-portfolio {
+    padding-left: 2em;
+}
+
+.texto-portfolio a {
+    color: #000;
+    text-decoration: underline;
+}
+
+#quem-sou {
+    border-right: 2px solid rgb(44, 106, 242);
+    padding-right: 2em;
+}
+
+#sobre {
+    align-items: center;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 75px);
+    padding: 2em;
+    text-align: justify;
+}
+
+.numero-progresso {
+    margin-left: 100%;
+    padding-left: 0.4em;
+}
+
+.social-link {
+    opacity: 50%;
+}
+
+.social-link:hover {
+    opacity: 100%;
+}
+
+#texto-progresso {
+    line-height: 100%;
+    padding-top: 2em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}

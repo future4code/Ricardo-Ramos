@@ -79,6 +79,10 @@ div>p:first-child {
     padding-top: 48px;
 }
 
+li {
+    list-style-position: inside;
+}
+
 #container-de-descricao>ol {
     padding: 15px 0px;
 }

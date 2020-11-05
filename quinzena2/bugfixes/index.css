@@ -13,6 +13,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    border: none;
+}
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
@@ -33,6 +37,7 @@ input:focus {
 
 button:focus {
     color: white;
+    outline: 0;
 }
 
 img {

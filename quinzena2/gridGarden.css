@@ -124,3 +124,14 @@
 #water {
   grid-column: span 3 / 5;
 }
+
+/* level 12 */
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-row-start: 3;
+}

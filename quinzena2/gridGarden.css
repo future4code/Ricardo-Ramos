@@ -170,3 +170,14 @@
   grid-column: span 4 / 6;
   grid-row: span 5;
 }
+
+/* level 16 */
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-area: 1 / 2 / 4 / 6;
+}

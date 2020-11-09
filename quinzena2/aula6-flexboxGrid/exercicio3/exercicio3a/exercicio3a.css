@@ -29,21 +29,52 @@ body {
 }
 
 .pink-background {
+    align-items: center;
     background-color: fuchsia;
+    display: flex;
+    height: 64vh;
+    justify-content: center;
+}
+
+#middle-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .blue-background {
+    align-items: center;
     background-color: blue;
+    display: flex;
+    height: 28vh;
+    justify-content: center;
+    width: 50vw;
 }
 
-.red-background {
-    background-color: red;
+#vertical-middle-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .lightgreen-background {
     background-color: lightgreen;
 }
 
+.lightgreen-background , .red-background {
+    align-items: center;
+    display: flex;
+    height: 14vh;
+    justify-content: center;
+    width: 50vh;
+}
+
+.red-background {
+    background-color: red;
+}
+
 .purple-background {
+    align-items: center;
     background-color: purple;
+    display: flex;
+    height: 4vh;
+    justify-content: center;
 }

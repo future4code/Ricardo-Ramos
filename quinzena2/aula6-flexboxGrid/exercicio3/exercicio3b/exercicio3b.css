@@ -7,6 +7,11 @@ body {
     color: white;
 }
 
+#main-container {
+    display: grid;
+    height: 100vh;
+}
+
 .green-background {
     background-color: green;
 }

@@ -7,12 +7,25 @@ body {
     color: white;
 }
 
+#top-container {
+    display: flex;
+    height: 4vh;
+}
+
 .green-background {
     background-color: green;
+    width: 20vw;
+}
+
+.green-background, .yellow-background {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .yellow-background {
     background-color: yellow;
+    width: 80vw;
 }
 
 .pink-background {

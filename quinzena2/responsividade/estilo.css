@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.black-block {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 28vh;
+    justify-content: center;
+    width: 48.6vw;
+}
+
+.black-line, .colored-line, .white-line {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.blue-block {
+    background-color: blue;
+}
+
+.blue-block, .green-block, .white-block, .yellow-block {
+    align-items: center;
+    display: flex;
+    height: 16vh;
+    justify-content: center;
+    width: 32vw;
+}
+
+.first-block {
+    background-color: red;
+    height: 8vh;
+    width: 100vw;
+}
+
+.green-block {
+    background-color: green;
+}
+
+.red-block {
+    background-color: red;
+}
+
+.white-block {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.yellow-block {
+    background-color: yellow;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .black-block {
+        width: 44vw;
+    }
+
+    .blue-block, .yellow-block {
+        width: 20em;
+        align-items: center;
+    }
+    
+    .green-block {
+        margin-top: 1em;
+        width: 96vw;
+    }
+
+    .white-block {
+        width: 28vw;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .black-block, .blue-block, .first-block, .green-block, .white-block, .yellow-block {
+        width: 96vh;
+        margin-top: 1em;
+    }
+}

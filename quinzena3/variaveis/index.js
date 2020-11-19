@@ -67,3 +67,6 @@ let respostasBool = [true, false, false]
 console.log(perguntasBool[0], respostasBool[0])
 console.log(perguntasBool[1], respostasBool[1])
 console.log(perguntasBool[2], respostasBool[2])
+
+// aula de 18/11/2020
+

@@ -16,20 +16,33 @@ d. 3, pois solicita o valor que está na posição 0 da array
 e. mostra a array com os 11 valores especificados, mas muda o segundo valor pra 19, já que [i+1], considerando que o i tem valor 0, representa a posição 1 da array
 f. 9, pois [i+6] é 0+6, ou seja, a variável valor apresenta a posição 6 da array, que tem o número 9 */
 
-// Exercícios de escrita de código
+
+
+
+
+// Exercícios de escrita de código (estão comentados para não interferirem uns nos outros ao testar no console)
 
 // 1.
-let idadeUsuario = prompt("Digite a sua idade (usando apenas números)")
-let idadeAmizade = prompt("Digite a idade da pessoa com quem você tem mais amizade (usando apenas números)")
+// let idadeUsuario = prompt("Digite a sua idade (usando apenas números)")
+// let idadeAmizade = prompt("Digite a idade da pessoa com quem você tem mais amizade (usando apenas números)")
 
-Number(idadeUsuario)
-Number(idadeAmizade)
+// Number(idadeUsuario)
+// Number(idadeAmizade)
 
-let comparaIdade = ((idadeUsuario > idadeAmizade) && true)
+// let comparaIdade = ((idadeUsuario > idadeAmizade) && true)
 
-console.log("Sua idade é maior do que a do seu melhor amigo?", comparaIdade)
+// console.log("Sua idade é maior do que a do seu melhor amigo?", comparaIdade)
 
-let idadeDiferenca = idadeUsuario - idadeAmizade
-Number(idadeDiferenca)
+// let idadeDiferenca = idadeUsuario - idadeAmizade
+// Number(idadeDiferenca)
 
-console.log("A diferença de idade entre vocês é", idadeDiferenca)
+// console.log("A diferença de idade entre vocês é", idadeDiferenca)
+
+
+// 2.
+let insiraNumeroPar = prompt("Insira um número par (se não for inteiro, use ponto em vez de vírgula)")
+Number(insiraNumeroPar)
+
+console.log("O resto da divisão deste número por 2 é", insiraNumeroPar%2)
+
+// Usando números pares, o resto é sempre 0, ou seja, a divisão dá certinho. Usando um número impar inteiro, o resto é 1, embora seja possível dividir por números "quebrados" usando ponto em vez de vírgula - caso contrário, dá erro ao exibir o resultado, dizendo que é NaN

@@ -28,3 +28,8 @@ Number(idadeAmizade)
 let comparaIdade = ((idadeUsuario > idadeAmizade) && true)
 
 console.log("Sua idade é maior do que a do seu melhor amigo?", comparaIdade)
+
+let idadeDiferenca = idadeUsuario - idadeAmizade
+Number(idadeDiferenca)
+
+console.log("A diferença de idade entre vocês é", idadeDiferenca)

@@ -40,9 +40,27 @@ f. 9, pois [i+6] é 0+6, ou seja, a variável valor apresenta a posição 6 da a
 
 
 // 2.
-let insiraNumeroPar = prompt("Insira um número par (se não for inteiro, use ponto em vez de vírgula)")
-Number(insiraNumeroPar)
+// let insiraNumeroPar = prompt("Insira um número par (se não for inteiro, use ponto em vez de vírgula)")
+// Number(insiraNumeroPar)
 
-console.log("O resto da divisão deste número por 2 é", insiraNumeroPar%2)
+// console.log("O resto da divisão deste número por 2 é", insiraNumeroPar%2)
 
 // Usando números pares, o resto é sempre 0, ou seja, a divisão dá certinho. Usando um número impar inteiro, o resto é 1, embora seja possível dividir por números "quebrados" usando ponto em vez de vírgula - caso contrário, dá erro ao exibir o resultado, dizendo que é NaN
+
+
+// 3.
+// let listaDeTarefas = [prompt("Digite uma tarefa que você precisa realizar hoje"), prompt("Digite mais uma tarefa que também precisa ser realizada hoje"), prompt("Digite, por fim, a terceira tarefa do dia")]
+
+// console.log("Estas são as suas tarefas:", listaDeTarefas)
+
+// let digiteTarefaConcluída = prompt("Digite apenas uma das opções a seguir: 0 se você já realizou a primeira tarefa, 1 se você já concluiu a segunda tarefa e 2 se já fez a terceira tarefa")
+// listaDeTarefas.splice(digiteTarefaConcluída, 1)
+
+// console.log("Verifique as seguintes tarefas que ainda precisam ser realizadas:", listaDeTarefas)
+
+
+// 4.
+// let nomeDoUsuario = prompt("Digite o seu nome")
+// let emailDoUsuario = prompt("Digite o seu e-mail")
+
+// console.log("O e-mail", emailDoUsuario, "foi cadastrado com sucesso! Boas vindas,", nomeDoUsuario + "!")

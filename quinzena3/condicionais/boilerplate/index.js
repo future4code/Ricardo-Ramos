@@ -16,3 +16,55 @@
 // a. O que a primeira linha está fazendo? Resposta: gerando um prompt na tela do usuário, que solicita que ele digite um número.
 // b. Considere um usuário digitou o número 10. Qual será a mensagem do terminal? E se fosse o número -10? Se o número for 10, aparece que passou no teste, já que o if especifica número maior do que 0. Se for -10, dá apenas uma mensagem de erro, já que não há um else para esse caso e fica somente a variável mensagem dentro do escopo, que não pode ser impressa fora dele já que ela não "existe" no programa de um modo geral por estar apenas dentro de um escopo específico.
 // c. Haverá algum erro no console? Justifique usando os conceitos de bloco ou escopo. Resposta: Erro de que a variável mensagem não foi definida, já que ela não tem um const ou um let principal além do escopo onde ela surgiu.
+
+// Exercícios de escrita de código
+
+// EXERCÍCIO 4
+// const idadeUsuario = prompt("Digite sua idade (apenas números) para saber se você pode dirigir")
+// Number(idadeUsuario)
+
+// if(idadeUsuario >= 18) {
+//   console.log("Você pode dirigir!")
+// } else {
+//   console.log("Você não pode dirigir.")
+// }
+
+// EXERCÍCIO 5
+// const turnoEstudo = prompt("Em que turno você estuda? Digite M para matutino, V para vespertino e N para noturno")
+
+// if(turnoEstudo === "M") {
+//   console.log("Bom dia!")
+// } else if(turnoEstudo === "V") {
+//   console.log("Boa tarde!")
+// } else if(turnoEstudo === "N") {
+//   console.log("Boa noite!")
+// } else {
+//   console.log("Você não especificou em que turno estuda.")
+// }
+
+// EXERCÍCIO 6
+// const turnoEstudo = prompt("Em que turno você estuda? Digite M para matutino, V para vespertino e N para noturno")
+// let turno
+// switch(turnoEstudo) {
+//   case "M":
+//   turno = console.log("Bom dia!")
+//   break
+//   case "V":
+//     turno = console.log("Boa tarde!")
+//   break
+//   case "N":
+//     turno = console.log("Boa noite!")
+//   break
+//   default: console.log("Você não especificou em que turno estuda.")
+//   break
+// }
+
+// EXERCÍCIO 7
+// const filme = prompt("Qual gênero de filme você e a pessoa com quem você tem amizade vão assistir?")
+// const preco = prompt("Qual é o valor do ingresso (digite apenas números)?")
+
+// if(filme === "Fantasia" && preco < 15) {
+//     console.log("Bom filme!")
+// } else {
+//     console.log("Escolha outro filme :(")
+// }

@@ -25,15 +25,15 @@ let segundaCartaComputador = comprarCarta()
 let pontoUsuario = 0
 let pontoComputador = 0
 
-if(inicio = true) {
-   if(primeiraCartaUsuario === cartas[0] && segundaCartaUsuario === cartas[0]) {
+if(inicio) {
+   if(primeiraCartaUsuario === 11 && segundaCartaUsuario === 11) {
       // fazer comprar outra carta
    } else {
       pontoUsuario = primeiraCartaUsuario.valor + segundaCartaUsuario.valor
-      console.log("Usuário - cartas: " + primeiraCartaUsuario.texto + segundaCartaUsuario.texto + "pontuação " + pontoUsuario)
+      console.log("Usuário - cartas: " + primeiraCartaUsuario.texto + " " + segundaCartaUsuario.texto + " pontuação " + pontoUsuario)
 
       pontoComputador = primeiraCartaComputador.valor + segundaCartaComputador.valor
-      console.log("Computador - cartas: " + primeiraCartaComputador.texto + segundaCartaComputador.texto + "pontuação " + pontoComputador)
+      console.log("Computador - cartas: " + primeiraCartaComputador.texto + " " + segundaCartaComputador.texto + " pontuação " + pontoComputador)
 
       if(pontoUsuario > pontoComputador) {
          console.log("O usuário ganhou!")

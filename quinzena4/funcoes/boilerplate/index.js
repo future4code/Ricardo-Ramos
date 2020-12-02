@@ -112,4 +112,4 @@
 // }
 // console.log("Há um total de", quantidadePares(array), "números pares")
 
-// d. NÃO CONSEGUI :()
+// d. NÃO CONSEGUI :(

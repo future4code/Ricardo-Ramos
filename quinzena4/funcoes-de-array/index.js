@@ -90,8 +90,13 @@ function filtrarDespesas(){
     let valorMin = Number(document.getElementById('valorFiltroMin').value)
     let valorMax = Number(document.getElementById('valorFiltroMax').value)
 
-    if(tipoFiltro == "" && valorMin == "" && valorMax == "") {
-        alert("Defina um filtro!")
+    // DESAFIO 1
+    if(tipoFiltro === "" || valorMin === "" || valorMax === "") {
+        alert("Não deixe campos vazios!")
+    } else if(valorMin < 0 || valorMax < 0) {
+        alert("Não é possível filtrar números negativos!")
+    } else if(valorMin >= valorMax) {
+        alert("Valor mínimo não pode ser igual ou maior do que o valor máximo!")
     }
 
     let condicionaisFiltros = (filtros) => {

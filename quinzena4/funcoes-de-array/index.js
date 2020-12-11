@@ -91,8 +91,10 @@ function filtrarDespesas(){
     let valorMax = Number(document.getElementById('valorFiltroMax').value)
 
     // DESAFIO 1
-    if(tipoFiltro === "" || valorMin === "" || valorMax === "") {
+    if(tipoFiltro == "" && valorMin == "" && valorMax == "") {
         alert("Não deixe campos vazios!")
+    } else if(tipoFiltro === tipoFiltro.value && valorMin === 0 || valorMax === 0) {
+        alert("Preencha todos os valores antes de filtrar!")
     } else if(valorMin < 0 || valorMax < 0) {
         alert("Não é possível filtrar números negativos!")
     } else if(valorMin >= valorMax) {

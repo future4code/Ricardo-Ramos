@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form-header {
+    display: flex;
+    gap: 1em;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80vh;
+    margin: 0 20px;
+    gap: 0.4em;
+}
+
+.semana {
+    border: 1px dotted rgb(53, 53, 53);
+    width: 12%;
+    padding: 5px;
+    min-height: 200px;
+    min-width: 240px;
+}
+
+.semana h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    input#tarefa {
+        width: 100px;
+    }
+
+    select#dias-semana {
+        width: 80px;
+    }
+
+    select#horas, select#minutos {
+        width: 44px;
+    }
+
+    .semana {
+        min-height: 120px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #form-header button:last-child {
+        margin-right: 2em;
+    }
+    
+    #form-header label {
+        margin-left: 1.6em;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    #dias-semana {
+        margin-left: 2em;
+    }
+}

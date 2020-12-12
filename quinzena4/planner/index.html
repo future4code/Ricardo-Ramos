@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js" defer></script>
+    <title>Planner</title>
+</head>
+<body>
+    <header>
+        <div id="form-header">
+            <form action="">
+                <label for="tarefa">Nova tarefa:</label>
+                <input type="text" id="tarefa">
+                <select name="dias-semana" id="dias-semana">
+                    <option value="domingo">Domingo</option>
+                    <option value="segunda">Segunda-feira</option>
+                    <option value="terca">Terça-feira</option>
+                    <option value="quarta">Quarta-feira</option>
+                    <option value="quinta">Quinta-feira</option>
+                    <option value="sexta">Sexta-feira</option>
+                    <option value="sabado">Sábado</option>
+                </select>
+                <select name="horas" id="horas">
+                    <option value="0h">0h</option>
+                    <option value="1h">1h</option>
+                    <option value="2h">2h</option>
+                    <option value="3h">3h</option>
+                    <option value="4h">4h</option>
+                    <option value="5h">5h</option>
+                    <option value="6h">6h</option>
+                    <option value="7h">7h</option>
+                    <option value="8h">8h</option>
+                    <option value="9h">9h</option>
+                    <option value="10h">10h</option>
+                    <option value="11h">11h</option>
+                    <option value="12h">12h</option>
+                    <option value="13h">13h</option>
+                    <option value="14h">14h</option>
+                    <option value="15h">15h</option>
+                    <option value="16h">16h</option>
+                    <option value="17h">17h</option>
+                    <option value="18h">18h</option>
+                    <option value="19h">19h</option>
+                    <option value="20h">20h</option>
+                    <option value="21h">21h</option>
+                    <option value="22h">22h</option>
+                    <option value="23h">23h</option>
+                </select>
+                <select name="minutos" id="minutos">
+                    <option value="0m">0m</option>
+                    <option value="1m">1m</option>
+                    <option value="2m">2m</option>
+                    <option value="3m">3m</option>
+                    <option value="4m">4m</option>
+                    <option value="5m">5m</option>
+                    <option value="6m">6m</option>
+                    <option value="7m">7m</option>
+                    <option value="8m">8m</option>
+                    <option value="9m">9m</option>
+                    <option value="10m">10m</option>
+                    <option value="11m">11m</option>
+                    <option value="12m">12m</option>
+                    <option value="13m">13m</option>
+                    <option value="14m">14m</option>
+                    <option value="15m">15m</option>
+                    <option value="16m">16m</option>
+                    <option value="17m">17m</option>
+                    <option value="18m">18m</option>
+                    <option value="19m">19m</option>
+                    <option value="20m">20m</option>
+                    <option value="21m">21m</option>
+                    <option value="22m">22m</option>
+                    <option value="23m">23m</option>
+                    <option value="24m">24m</option>
+                    <option value="25m">25m</option>
+                    <option value="26m">26m</option>
+                    <option value="27m">27m</option>
+                    <option value="28m">28m</option>
+                    <option value="29m">29m</option>
+                    <option value="30m">30m</option>
+                    <option value="31m">31m</option>
+                    <option value="32m">32m</option>
+                    <option value="33m">33m</option>
+                    <option value="34m">34m</option>
+                    <option value="35m">35m</option>
+                    <option value="36m">36m</option>
+                    <option value="37m">37m</option>
+                    <option value="38m">38m</option>
+                    <option value="39m">39m</option>
+                    <option value="40m">40m</option>
+                    <option value="41m">41m</option>
+                    <option value="42m">42m</option>
+                    <option value="43m">43m</option>
+                    <option value="44m">44m</option>
+                    <option value="45m">45m</option>
+                    <option value="46m">46m</option>
+                    <option value="47m">47m</option>
+                    <option value="48m">48m</option>
+                    <option value="49m">49m</option>
+                    <option value="50m">50m</option>
+                    <option value="51m">51m</option>
+                    <option value="55m">52m</option>
+                    <option value="53m">53m</option>
+                    <option value="54m">54m</option>
+                    <option value="55m">55m</option>
+                    <option value="56m">56m</option>
+                    <option value="57m">57m</option>
+                    <option value="58m">58m</option>
+                    <option value="59m">59m</option>
+                </select>
+            </form>
+
+            <button onclick="adicionarTarefa()">Criar tarefa</button>
+            <button onclick="limparTudo()">Limpar tarefas</button>
+        </div>
+        
+    </header>
+    <section>
+        <div class="semana">
+            <h3>Domingo</h3>
+            <div id="domingo"></div>
+        </div>
+
+        <div class="semana">
+            <h3>Segunda-feira</h3>
+            <div id="segunda"></div>
+        </div>
+
+        <div class="semana">
+            <h3>Terça-feira</h3>
+            <div id="terca"></div>
+        </div>
+    
+        <div class="semana">
+            <h3>Quarta-feira</h3>
+            <div id="quarta"></div>
+        </div>
+    
+        <div class="semana">
+            <h3>Quinta-feira</h3>
+            <div id="quinta"></div>
+        </div>
+
+        <div class="semana">                    
+            <h3>Sexta-feira</h3>               
+            <div id="sexta"></div>
+        </div>
+
+        <div class="semana">
+            <h3>Sábado</h3>
+            <div id="sabado"></div>
+        </div>
+    </section>
+    
+</body>
+</html>

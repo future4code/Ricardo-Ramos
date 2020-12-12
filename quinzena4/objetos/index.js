@@ -19,11 +19,7 @@ function formDoPost() {
 }
 
 function hierarquiaPost(infosDoForm) {
-    return "<article>" +
-    "<h2>" + infosDoForm.titulo + "</h2>" +
-    "<h5>" + infosDoForm.autor + "</h5>" + 
-    "<p>" + infosDoForm.texto + "</p>" +
-    "</article>"
+    return `<article><h2>${infosDoForm.titulo}</h2><h5>${infosDoForm.autor}</h5><p>${infosDoForm.texto}</p></article>`
 }
 
 function inserirNovoPost() {

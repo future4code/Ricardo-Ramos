@@ -27,7 +27,10 @@
 // let pontoUsuario = 0
 // let pontoComputador = 0
 
+
+// if(inicio) {
 // if(inicio = true) {
+
 //    pontoUsuario = primeiraCartaUsuario.valor + segundaCartaUsuario.valor
 //    console.log("Usuário - cartas: " + primeiraCartaUsuario.texto + segundaCartaUsuario.texto + "pontuação " + pontoUsuario)
 

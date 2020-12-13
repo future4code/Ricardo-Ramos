@@ -27,3 +27,10 @@ Como faz: Há 3 variáveis, sendo a primeira, "numeros", a que conta com a array
 Qual será o valor impresso no console: "Quantidade total de números 14", "6" e "8". */
 
 
+// EXERCÍCIO 4
+
+/* O que faz: Imprime o menor e o maior número da array.
+
+Como faz: A array da variável "numeros" é analisada em loop a partir de um for of, com 2 outras variáveis para realizar as condicionais dentro do programa: "numero1", com valor inicial Infinity, e "numero2", com valor inicial 0. No for of, é declarada também a variável "numero", com 2 condicionais IF: uma para encontrar o número menor, outra para o maior. No primeiro IF, se "numero" for menor do que "numero1", a variável "numero" passa a ter o mesmo valor do que "numero1". Isso é possível por causa do Infinity de "numero1", que possibilita percorrer a array em busca do menor possível, já que qualquer número é menor do que "infinito". A lógica oposta é aplicada no segundo IF para encontrar o maior, já que qualquer número é maior do que 0, o que permite buscar o maior número possível.
+
+Qual será o valor impresso no console: "-10" e "1590" */

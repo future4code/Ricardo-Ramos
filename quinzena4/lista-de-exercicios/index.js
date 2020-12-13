@@ -240,7 +240,7 @@ console.log(menosDe20Anos) */
 
 // EXERCÍCIO 2
 
-const array = [1, 2, 3, 4, 5, 6]
+// const array = [1, 2, 3, 4, 5, 6]
 
 /* a) const multiplicaPor2 = array.map((numero) => {
     return 2 * numero

@@ -68,6 +68,7 @@ let numerosImpares = numeros.filter((numero) => {
 
 console.log(numerosImpares) */
 
+
 // EXERCÍCIO 2
 
 /* a) "booleano1 && booleano2 && !booleano4" tem valor false
@@ -79,3 +80,15 @@ c) "(booleano2 || booleano3) && (booleano4 || booleano1)" tem valor true
 d) "!(booleano2 && booleano3) || !(booleano1 && booleano3)" tem valor true
 
 e) "!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)" tem valor true */
+
+
+// EXERCÍCIO 3
+
+/* O código apresentado não funciona, pois uma variável const não é flexível como a let e precisa de um valor predefinido, além da condicional estar incompleta — apenas incluir um valor na const levaria a um loop infinito. Para completar o código, é possível fazer da seguinte forma:
+
+const quantidadeDeNumerosPares = Number(prompt("Quantos números pares você quer ver (use apenas o teclado numérico)?"))
+let i = 0
+while(i < quantidadeDeNumerosPares) {
+  console.log(i*2)
+  i++
+} */

@@ -212,3 +212,27 @@ function anonimizarPessoa() {
         endereco: "Rua Sem Nome, 0"
     }
 } */
+
+
+// EXERCÍCIOS DE FUNÇÕES DE ARRAY
+
+// EXERCÍCIO 1
+
+/* let arrayPessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+a) let adultos = arrayPessoas.filter((separarArrays) => {
+    return separarArrays.idade >= 20
+})
+
+console.log(adultos) */
+
+/* b) let menosDe20Anos = arrayPessoas.filter((separarArrays) => {
+    return separarArrays.idade < 20
+})
+
+console.log(menosDe20Anos) */

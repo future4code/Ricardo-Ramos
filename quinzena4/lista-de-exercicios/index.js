@@ -161,3 +161,12 @@ console.log("A diferença entre eles é " + diferenca) */
 }
 
 oiLabenu()*/
+
+
+// EXERCÍCIOS DE OBJETOS
+
+// EXERCÍCIO 1
+
+/* Arrays são listas que podem ser usadas para armazenar e/ou guardar múltiplas informações de uma vez. Objetos são conjuntos de dados dentro de uma mesma variável e permitem representar dados mais complexos, como dados atrelados a um determinado usuário de um sistema. */
+
+

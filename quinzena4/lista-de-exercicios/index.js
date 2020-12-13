@@ -146,3 +146,18 @@ if (diferenca < 0) {
     diferenca = diferenca * -1
 }
 console.log("A diferença entre eles é " + diferenca) */
+
+
+// EXERCÍCIOS DE FUNÇÕES
+
+// EXERCÍCIO 1
+
+
+
+// EXERCÍCIO 2
+
+/* function oiLabenu() {
+    return alert("Hello Labenu")
+}
+
+oiLabenu()*/

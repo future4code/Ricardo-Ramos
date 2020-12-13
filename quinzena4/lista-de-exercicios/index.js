@@ -67,3 +67,15 @@ let numerosImpares = numeros.filter((numero) => {
 })
 
 console.log(numerosImpares) */
+
+// EXERCÍCIO 2
+
+/* a) "booleano1 && booleano2 && !booleano4" tem valor false
+
+b) "(booleano1 && booleano2) || !booleano3" tem valor false
+
+c) "(booleano2 || booleano3) && (booleano4 || booleano1)" tem valor true
+
+d) "!(booleano2 && booleano3) || !(booleano1 && booleano3)" tem valor true
+
+e) "!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)" tem valor true */

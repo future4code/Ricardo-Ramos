@@ -11,26 +11,10 @@ Qual será o valor impresso no console: Hoje, 13/12/2020, a cotação do dólar 
 
 // EXERCÍCIO 2
 
-/* O que faz: 
+/* O que faz: Apresenta uma função que calcula rendimentos em diversos tipos de investimento.
 
-Como faz: 
+Como faz: A função "investeDinheiro" tem os parâmetros "tipoDeInvestimento" e "valor". Dentro dela, na variável "valorAposInvestimento", há um switch case com o primeiro parâmetro da função, que tem a variável "valorAposInvestimento" como o resultado da multiplicação do segundo parâmetro pelo valor específico que cada tipo de investimento rende, além de um default que retorna um erro se for informado um tipo de investimento que não está especificado no switch case. Fora do switch, há um return, que traz de volta a variável "valorAposInvestimento" como resultado. Saindo da função, há 2 variáveis novas: "novoMontante", que chama a função para imprimir o valor após investir em ações, e "segundoMontante", que chama a função com um investimento que não está no switch, "tesouro direto".
 
-Qual será o valor impresso no console:  */
-
-
-// EXERCÍCIO 3
-
-/* O que faz: 
-
-Como faz: 
-
-Qual será o valor impresso no console:  */
+Qual será o valor impresso no console: 165 na variável novoMontante e erro "TIPO DE INVESTIMENTO INFORMADO INCORRETO" na variável "segundoMontante". */
 
 
-// EXERCÍCIO 4
-
-/* O que faz: 
-
-Como faz: 
-
-Qual será o valor impresso no console:  */

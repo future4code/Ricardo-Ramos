@@ -170,3 +170,14 @@ oiLabenu()*/
 /* Arrays são listas que podem ser usadas para armazenar e/ou guardar múltiplas informações de uma vez. Objetos são conjuntos de dados dentro de uma mesma variável e permitem representar dados mais complexos, como dados atrelados a um determinado usuário de um sistema. */
 
 
+// EXERCÍCIO 2
+
+/* let criaRetangulo = (lado1, lado2) => {
+    return {
+        largura: lado1,
+        altura: lado2,
+        perimetro: 2 * (lado1+lado2),
+        area: lado1 * lado2
+    }
+}
+console.log(criaRetangulo(Number(prompt("Vamos verificar informações sobre um triângulo? Digite a largura dele (apenas números")), Number(prompt("Vamos verificar informações sobre um triângulo? Digite a largura dele (apenas números")))) */

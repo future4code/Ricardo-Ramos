@@ -92,3 +92,21 @@ while(i < quantidadeDeNumerosPares) {
   console.log(i*2)
   i++
 } */
+
+
+// EXERCÍCIO 4
+
+/* let triangulos = () => {
+    let a = Number(prompt("O triângulo é equilátero, isósceles ou escaleno? Digite o primeiro tamanho (apenas números)."))
+    let b = Number(prompt("O triângulo é equilátero, isósceles ou escaleno? Digite o segundo tamanho (apenas números)."))
+    let c = Number(prompt("O triângulo é equilátero, isósceles ou escaleno? Digite o terceiro e último tamanho (apenas números)."))
+    
+    if (a === b && b === c) {
+      console.log("Triângulo equilátero")
+    } else if (a === b || a === c || b === c) {
+      console.log("Triângulo isósceles")
+    } else {
+      console.log("Triângulo escaleno")
+    }
+  }
+  triangulos() */

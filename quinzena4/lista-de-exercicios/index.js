@@ -181,3 +181,15 @@ oiLabenu()*/
     }
 }
 console.log(criaRetangulo(Number(prompt("Vamos verificar informações sobre um triângulo? Digite a largura dele (apenas números")), Number(prompt("Vamos verificar informações sobre um triângulo? Digite a largura dele (apenas números")))) */
+
+
+// EXERCÍCIO 3
+
+/* const filmeFavorito = {
+    titulo: 'Clube da Luta',
+    ano: 1999,
+    diretor: 'David Fincher',
+    atrizesEAtores: ["Edward Norton", " Brad Pitt", " Meat Loaf", " Zack Grenier"]
+}
+
+console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atrizesEAtores}.`) */

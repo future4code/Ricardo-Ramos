@@ -236,3 +236,30 @@ console.log(adultos) */
 })
 
 console.log(menosDe20Anos) */
+
+
+// EXERCÍCIO 2
+
+const array = [1, 2, 3, 4, 5, 6]
+
+/* a) const multiplicaPor2 = array.map((numero) => {
+    return 2 * numero
+})
+
+console.log(multiplicaPor2)  */
+
+/* b) const multiplicaPor3 = array.map((numero) => {
+    return 3 * numero
+})
+
+console.log(multiplicaPor3) */
+
+/* c) const verificaParOuImpar = array.map((numero) => {
+    if (numero % 2 === 0) {
+        return ` ${numero} é par`
+    } else {
+        return ` ${numero} é ímpar`
+    }
+})
+
+console.log(String(verificaParOuImpar)) */

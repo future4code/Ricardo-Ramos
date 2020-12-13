@@ -193,3 +193,22 @@ console.log(criaRetangulo(Number(prompt("Vamos verificar informações sobre um 
 }
 
 console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atrizesEAtores}.`) */
+
+
+// EXERCÍCIO 4
+
+/* const pessoa = {
+    nome: "Fulano",
+    idade: 100,
+    email: "fulano@fulano.gov",
+    endereco: "Rua Sem Nome, 0"
+}
+
+function anonimizarPessoa() {
+    return {
+        nome: "Anônimo",
+        idade: 100,
+        email: "fulano@fulano.gov",
+        endereco: "Rua Sem Nome, 0"
+    }
+} */

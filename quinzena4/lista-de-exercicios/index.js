@@ -18,3 +18,12 @@ Como faz: A função "investeDinheiro" tem os parâmetros "tipoDeInvestimento" e
 Qual será o valor impresso no console: 165 na variável novoMontante e erro "TIPO DE INVESTIMENTO INFORMADO INCORRETO" na variável "segundoMontante". */
 
 
+// EXERCÍCIO 3
+
+/* O que faz: Imprime quantidades de números em 3 arrays, sendo uma inicial, já definida, e outras 2 que começam vazias e, após o programa rodar, terão 2 grupos diferentes de números — uma terá ímpares; a outra, pares.
+
+Como faz: Há 3 variáveis, sendo a primeira, "numeros", a que conta com a array de base do código. As outras duas, "array1" e "array2" começam vazias para retornarem no fim do código, respectivamente, números pares e números ímpares. No for of que vem em seguida, é definida uma variável "numero", para analisar o índice na variável "numeros" por meio de loop. Se os números forem pares, entram na array da variável "array1", caso contrário, na array da variável [array2]. No final, há 3 console.log, que imprimem quantos números há na array "números", na array de números pares e também na de ímpares.
+
+Qual será o valor impresso no console: "Quantidade total de números 14", "6" e "8". */
+
+

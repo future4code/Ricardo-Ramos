@@ -110,3 +110,39 @@ while(i < quantidadeDeNumerosPares) {
     }
   }
   triangulos() */
+
+
+  // EXERCÍCIO 5
+
+/* const num1 = Number(prompt("Vamos comparar 2 números? Digite o 1º (use teclado numérico)."))
+const num2 = Number(prompt("Vamos comparar 2 números? Digite o 1º (use teclado numérico)."))
+
+let maior = 0
+let diferenca = 0 
+
+
+if (num1 > num2) {
+    maior = num1
+    console.log("O maior é: ", num1)
+} else {
+    maior = num2
+    console.log("O maior é: ", num2)
+}
+
+if (num1 % num2 === 0) {
+    console.log(num1 + " é divisível por " + num2)
+} else {
+    console.log(num1 + " não é divisível por " + num2)
+}
+
+if (num2 % num1 === 0) {
+    console.log(num2 +" é divisível por " + num1)
+} else {
+    console.log(num2 +" não é divisível por " + num1)
+}
+
+diferenca = num1 - num2
+if (diferenca < 0) {
+    diferenca = diferenca * -1
+}
+console.log("A diferença entre eles é " + diferenca) */

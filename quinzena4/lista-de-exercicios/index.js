@@ -267,14 +267,14 @@ console.log(String(verificaParOuImpar)) */
 
 // EXERCÍCIO 3
 
-const pessoas = [
+/* const pessoas = [
 	{ nome: "Paula", idade: 12, altura: 1.8},
 	{ nome: "João", idade: 20, altura: 1.3},
 	{ nome: "Pedro", idade: 15, altura: 1.9},
 	{ nome: "Luciano", idade: 22, altura: 1.8},
 	{ nome: "Artur", idade: 10, altura: 1.2},
 	{ nome: "Soter", idade: 70, altura: 1.9}
-]
+] */
 
 /* a) const entradaPermitida = pessoas.filter((podeOuNao) => {
     return podeOuNao.idade >= 14 && podeOuNao.idade <= 60 && podeOuNao.altura >= 1.5
@@ -287,3 +287,34 @@ console.log(entradaPermitida) */
 })
 
 console.log(entradaProibida) */
+
+
+// EXERCÍCIO 4
+
+/* const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+function enviarMensagem(consultas) {
+    let mensagem = consultas.map((dados) => {
+        if(dados.cancelada === false) {
+            if(dados.genero === "masculino") {
+                return `Olá, Sr. ${dados.nome}. Estamos enviando essa mensagem para lembrá-lo da sua consulta no dia  ${dados.dataDaConsulta}. Por favor, acuse o recebimento desse email.`
+            } else {
+                return `Olá, Sra. ${dados.nome}. Estamos enviando essa mensagem para lembrá-la da sua consulta no dia  ${dados.dataDaConsulta}. Por favor, acuse o recebimento desse email.`
+            }
+        } else {
+            if(dados.genero === "masculino") {
+                return `Olá, Sr. ${dados.nome}. Infelizmente, sua consulta marcada para o dia ${dados.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`
+            } else {
+                return `Olá, Sra. ${dados.nome}. Infelizmente, sua consulta marcada para o dia ${dados.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`
+            }
+        }
+    })
+        return mensagem
+}
+
+console.log(enviarMensagem(consultas)) */

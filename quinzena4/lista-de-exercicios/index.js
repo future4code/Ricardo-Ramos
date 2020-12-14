@@ -109,10 +109,11 @@ while(i < quantidadeDeNumerosPares) {
       console.log("Triângulo escaleno")
     }
   }
-  triangulos() */
+  triangulos()
+*/
 
 
-  // EXERCÍCIO 5
+// EXERCÍCIO 5
 
 /* const num1 = Number(prompt("Vamos comparar 2 números? Digite o 1º (use teclado numérico)."))
 const num2 = Number(prompt("Vamos comparar 2 números? Digite o 1º (use teclado numérico)."))
@@ -152,7 +153,7 @@ console.log("A diferença entre eles é " + diferenca) */
 
 // EXERCÍCIO 1
 
-
+// NÃO CONSEGUI, PERDÃO PELO VACILO, LABENU :(
 
 // EXERCÍCIO 2
 

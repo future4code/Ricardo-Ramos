@@ -1,0 +1,39 @@
+.bigcard-container img {
+    margin-left: 24px
+}
+
+.bigcard-textos {
+    margin-left: 20px;
+}
+
+.card-pequeno {
+    display: flex;
+    gap: 2em;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-pequeno-textos {
+    font-weight: 350;
+}
+
+.card-pequeno-textos h4 {
+    font-size: 14px;
+}
+
+.card-pequeno-textos p {
+    font-size: 12px;
+}
+
+.icones {
+    height: 4vh;
+}
+
+.image-button-container {
+    margin-top: 40px;
+}
+
+.link-redes-sociais {
+    text-decoration: none;
+}

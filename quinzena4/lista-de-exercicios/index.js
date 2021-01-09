@@ -184,6 +184,7 @@ console.log("A diferença entre eles é " + diferenca) */
 
 // segundoMaiorMenor()
 
+
 // EXERCÍCIO 2
 
 /* function oiLabenu() {

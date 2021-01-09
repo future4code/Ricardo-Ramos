@@ -186,14 +186,18 @@ console.log(criaRetangulo(Number(prompt("Vamos verificar informações sobre um 
 
 // EXERCÍCIO 3
 
-/* const filmeFavorito = {
-    titulo: 'Clube da Luta',
-    ano: 1999,
-    diretor: 'David Fincher',
-    atrizesEAtores: ["Edward Norton", " Brad Pitt", " Meat Loaf", " Zack Grenier"]
-}
+// const filmeFavorito = {
+//     titulo: 'Clube da Luta',
+//     ano: 1999,
+//     diretor: 'David Fincher',
+//     atores: ["Edward Norton", " Brad Pitt", " Meat Loaf", " Zack Grenier"]
+// }
 
-console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atrizesEAtores}.`) */
+// const arrayAtores = filmeFavorito.atores.map((ator) => {
+//     return ator
+// })
+
+// console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${arrayAtores}`)
 
 
 // EXERCÍCIO 4

@@ -42,7 +42,6 @@ const UserPhoto = styled.img`
 const PostPhoto = styled.img`
   width: 100%;
 `
-
 class Post extends React.Component {
   state = {
     curtido: false,
@@ -91,6 +90,7 @@ class Post extends React.Component {
 
     if(this.state.comentando) {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
+
     }    
       
     return <PostContainer>
@@ -121,7 +121,6 @@ class Post extends React.Component {
         {componenteComentario}
       </PostContainer>
 
-    
     // QUESTÃO 4 - Os itens vêm da função IconeComContador, que definem no componente o que acontece quando se clica na curtida e se deixa um comentário, definidos por meio de estados e de variáveis definidas acima para os ícones de curtida e de comentário.
 
   }

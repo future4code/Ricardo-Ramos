@@ -1,5 +1,6 @@
 import React from 'react'
-import './Post.css'
+
+import styled from 'styled-components'
 
 import {IconeComContador} from '../IconeComContador/IconeComContador'
 
@@ -10,6 +11,37 @@ import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
 
 // QUESTÃO 3 - Ainda estou compreendendo as questões de componentização, já entendi sobre a parte de setorizar o site em si, mas estou um pouco confuso em relação aos pormenores. Além disso, estou tentando entender melhor os estados e, consequentemente, o setState.
 
+const PostContainer = styled.div`
+  border: 1px solid gray;
+  width: 300px;
+  margin-bottom: 10px;
+`
+
+const PostHeader = styled.div`
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+`
+
+const PostFooter = styled.div`
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+`
+
+const UserPhoto = styled.img`
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+`
+
+const PostPhoto = styled.img`
+  width: 100%;
+`
 class Post extends React.Component {
   state = {
     curtido: false,
@@ -58,31 +90,36 @@ class Post extends React.Component {
 
     if(this.state.comentando) {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
-    }
 
-    return <div className={'post-container'}>
-      <div className={'post-header'}>
-        <img className={'user-photo'} src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
-        <p>{this.props.nomeUsuario}</p>
-      </div>
+    }    
+      
+    return <PostContainer>
+        <PostHeader>
+          <UserPhoto
+            src={this.props.avatarUsuario} alt={'Imagem do usuario'}
+          />
+          <p>{this.props.nomeUsuario}</p>
+        </PostHeader>
 
-      <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'}/>
-
-      <div className={'post-footer'}>
-        <IconeComContador
-          icone={iconeCurtida}
-          onClickIcone={this.onClickCurtida}
-          valorContador={this.state.numeroCurtidas}
+        <PostPhoto
+          src={this.props.fotoPost} alt={'Imagem do post'}
         />
 
-        <IconeComContador
-          icone={iconeComentario}
-          onClickIcone={this.onClickComentario}
-          valorContador={this.state.numeroComentarios}
-        />
-      </div>
-      {componenteComentario}
-    </div>
+        <PostFooter>
+          <IconeComContador
+            icone={iconeCurtida}
+            onClickIcone={this.onClickCurtida}
+            valorContador={this.state.numeroCurtidas}
+          />
+
+          <IconeComContador
+            icone={iconeComentario}
+            onClickIcone={this.onClickComentario}
+            valorContador={this.state.numeroComentarios}
+          />
+        </PostFooter>
+        {componenteComentario}
+      </PostContainer>
 
     // QUESTÃO 4 - Os itens vêm da função IconeComContador, que definem no componente o que acontece quando se clica na curtida e se deixa um comentário, definidos por meio de estados e de variáveis definidas acima para os ícones de curtida e de comentário.
 

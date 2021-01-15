@@ -153,7 +153,37 @@ console.log("A diferença entre eles é " + diferenca) */
 
 // EXERCÍCIO 1
 
-// NÃO CONSEGUI, PERDÃO PELO VACILO, LABENU :(
+// const array = [45, 21, 668, 321, 532, 687, 34, 11, 34, 23]
+
+// function segundoMaiorMenor() {
+//     let maiorNumero = -Infinity
+//     let menorNumero = Infinity
+//     let segundoMaiorNumero = -Infinity
+//     let segundoMenorNumero = Infinity
+    
+//     for (let numero of array) {
+//         if (numero > maiorNumero) {
+//             maiorNumero = numero
+//         }
+//         if (numero < menorNumero) {
+//             menorNumero = numero
+//         }   
+//     }
+
+//     for (let numero of array) {
+//         if (numero > segundoMaiorNumero && numero < maiorNumero) {
+//             segundoMaiorNumero = numero
+//         }
+//         if (numero < segundoMenorNumero && numero > menorNumero) {
+//             segundoMenorNumero = numero
+//         }   
+//     }
+//     console.log("O segundo maior é o", segundoMaiorNumero)
+//     console.log("O segundo menor é o", segundoMenorNumero)
+// }
+
+// segundoMaiorMenor()
+
 
 // EXERCÍCIO 2
 
@@ -186,14 +216,18 @@ console.log(criaRetangulo(Number(prompt("Vamos verificar informações sobre um 
 
 // EXERCÍCIO 3
 
-/* const filmeFavorito = {
-    titulo: 'Clube da Luta',
-    ano: 1999,
-    diretor: 'David Fincher',
-    atrizesEAtores: ["Edward Norton", " Brad Pitt", " Meat Loaf", " Zack Grenier"]
-}
+// const filmeFavorito = {
+//     titulo: 'Clube da Luta',
+//     ano: 1999,
+//     diretor: 'David Fincher',
+//     atores: ["Edward Norton", " Brad Pitt", " Meat Loaf", " Zack Grenier"]
+// }
 
-console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atrizesEAtores}.`) */
+// const arrayAtores = filmeFavorito.atores.map((ator) => {
+//     return ator
+// })
+
+// console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${arrayAtores}`)
 
 
 // EXERCÍCIO 4

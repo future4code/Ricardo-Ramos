@@ -88,6 +88,23 @@ class App extends React.Component {
     })
   }
 
+  incluirNovoPost = () => {
+    const dadosNovoPost = {
+      nome: this.state.valorUsuario,
+      avatar: this.state.valorAvatar,
+      fotoPost: this.state.valorFotoPost
+    }
+
+    const feedNovoPost = [...this.state.usuarios, dadosNovoPost]
+    this.setState ({
+      usuarios: feedNovoPost,
+
+      valorUsuario: "",
+      valorAvatar: "",
+      valorFotoPost: ""
+    })
+  }
+
   render() {
     const feedPosts = this.state.usuarios.map((usuario) => {
       return (

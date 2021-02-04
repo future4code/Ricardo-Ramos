@@ -6,9 +6,10 @@ import ricardoPost from './img/ricardo-post.jpg'
 import triceratopsUser from './img/triceratops-user.png'
 import triceratopsPost from './img/triceratops-post.jpg'
 
+
 const EstiloDaPagina = styled.main`
   background-color: #999a9e;
-  height: 100vh;
+  // height: 100vh;
 `
 
 const ContainerPosts = styled.section`
@@ -50,6 +51,23 @@ class App extends React.Component {
         fotoPost: 'https://picsum.photos/200/150'
       }
     ]
+  }
+
+  incluirNovoPost = () => {
+    const dadosNovoPost = {
+      nomeUsuario: this.state.valorUsuario,
+      avatarUsuario: this.state.valorAvatar,
+      fotoPost: this.state.valorFotoPost
+    }
+
+    const feedNovoPost = [...this.state.usuarios, dadosNovoPost]
+    this.setState ({
+      usuarios: feedNovoPost,
+
+      valorUsuario: "",
+      valorAvatar: "",
+      valorFotoPost: ""
+    })
   }
 
   incluirNomeUsuario = (event) => {

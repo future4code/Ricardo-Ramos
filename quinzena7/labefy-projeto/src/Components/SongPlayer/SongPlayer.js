@@ -1,16 +1,21 @@
 import React from 'react';
+import { StyledButtons } from '../../Constants/StyledConstants'
+import { SongPlayerWrapper } from './Styled'
+import { SongPlayerStyled } from './Styled'
 
 class SongPlayer extends React.Component {
 
   render() {
     return (
-      <div>
-        <p> <strong>{this.props.artistName}</strong> - {this.props.songName} </p>
-        <audio controls="controls">
-          <source src={this.songUrl} type="audio/mpeg" />
-        </audio>
-        <button onClick={() => this.props.deleteSongs(this.props.songId)}> Excluir música </button>
-      </div>
+      <SongPlayerWrapper>
+        <p><strong>{this.props.artistName}</strong> - {this.props.songName}</p>
+        <SongPlayerStyled>
+          <audio controls="controls">
+            <source src={this.props.songUrl} type="audio/mpeg" />
+          </audio>
+          <StyledButtons onClick={() => this.props.deleteSongs(this.props.songId)}> Excluir música </StyledButtons>
+        </SongPlayerStyled>
+      </SongPlayerWrapper>
     );
   };
 };

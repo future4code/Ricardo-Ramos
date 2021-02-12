@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Components/Menu/Menu';
-import Reset from './Constants/Reset';
+import { Reset } from './Constants/StyledConstants';
 import NewPlaylist from './Components/NewPlaylist/NewPlaylist';
 import EditPlaylists from './Components/EditPlaylists/EditPlaylists';
 

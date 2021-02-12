@@ -1,6 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import { API_HEADER, BASE_URL } from '../../Constants/InfoApi';
+import { LabefyMain } from '../../Constants/StyledConstants'
+import { StyledButtons } from '../../Constants/StyledConstants'
+import { StyledTitle } from '../../Constants/StyledConstants';
+import { StyledInput } from '../../Constants/StyledConstants'
+import { SectionNewPlaylist } from './Styled'
 
 class NewPlaylist extends React.Component {
   state = {
@@ -32,17 +37,20 @@ class NewPlaylist extends React.Component {
   render() {
 
     return (
-      <section>
-        <h3> Vamos criar uma nova playlist? </h3>
-        <form onSubmit={ this.addNewPlaylist }>
-          <input
-            placeholder="Escolha um nome incrível para a sua playlist!"
-            value={ this.state.playlistName }
-            onChange={ this.addPlaylistName }
-          />
-          <button type="submit"> Criar </button>
-        </form>
-      </section>
+      <LabefyMain>
+        <SectionNewPlaylist>
+          <StyledTitle> Vamos criar uma nova playlist? </StyledTitle>
+          <form onSubmit={ this.addNewPlaylist }>
+            <StyledInput
+              placeholder="Escolha um nome incrível para a sua playlist!"
+              value={ this.state.playlistName }
+              onChange={ this.addPlaylistName }
+              className="inputNewPlaylistName"
+            />
+            <StyledButtons type="submit"> Criar </StyledButtons>
+          </form>
+        </SectionNewPlaylist>
+      </LabefyMain>
     );
   };
 };

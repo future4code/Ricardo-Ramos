@@ -2,6 +2,11 @@ import React from 'react';
 import SongPlayer from '../SongPlayer/SongPlayer';
 import axios from 'axios';
 import { API_HEADER, BASE_URL } from '../../Constants/InfoApi';
+import { StyledTitle } from '../../Constants/StyledConstants';
+import { StyledButtons } from '../../Constants/StyledConstants'
+import { StyledInput } from '../../Constants/StyledConstants'
+import { PlaylistSongsSection } from './Styled'
+import { NewSongInputs } from './Styled'
 
 class ShowPlaylistSongs extends React.Component {
   state = {
@@ -79,39 +84,35 @@ class ShowPlaylistSongs extends React.Component {
     })
 
     return (
-      <section>
-        <button onClick={() => this.props.switchPages("CatalogPlaylists", "") }> Voltar para a seleção de playlists </button>
+      <PlaylistSongsSection>
+        <StyledButtons onClick={() => this.props.switchPages("CatalogPlaylists", "") } className="buttonBackToPlaylists"> Voltar para a seleção de playlists </StyledButtons>
+        <StyledTitle className="titleAddSong"> Lembrou de música nova? Adiciona aí na playlist! </StyledTitle>
         <form>
-          <h3> Lembrou de música nova?<br />Adiciona aí na playlist! </h3>
-          <div>
-            <input
-              placeholder="Nome da música"
-              name="songName"
-              value={ this.state.songName }
-              onChange={ this.onChangeInput }
-            />
-          </div>
-          <div>
-            <input
-              placeholder="Nome de banda ou artista"
-              name="artistName"
-              value={ this.state.artistName }
-              onChange={ this.onChangeInput }
-            />
-          </div>
-          <div>
-            <input
-              placeholder="Link da música"
-              name="songUrl"
-              value={ this.state.songUrl }
-              onChange={ this.onChangeInput }
-            />
-          </div>
-          <button type="submit" onClick={this.addNewSongs}> Adicionar música </button>
+          <NewSongInputs>
+              <StyledInput
+                placeholder="Nome da música"
+                name="songName"
+                value={ this.state.songName }
+                onChange={ this.onChangeInput }
+              />
+              <StyledInput
+                placeholder="Nome de banda ou artista"
+                name="artistName"
+                value={ this.state.artistName }
+                onChange={ this.onChangeInput }
+              />
+              <StyledInput
+                placeholder="Link da música"
+                name="songUrl"
+                value={ this.state.songUrl }
+                onChange={ this.onChangeInput }
+              />
+          </NewSongInputs>
+          <StyledButtons type="submit" onClick={this.addNewSongs} className="buttonAddNewSong"> Adicionar música </StyledButtons>
         </form>
-        <h3> No momento, sua playlist tá assim: </h3>
+        <StyledTitle className="titleCurrentPlaylist"> No momento, sua playlist tá assim: </StyledTitle>
         { songs }
-      </section>
+      </PlaylistSongsSection>
     );
 
   };

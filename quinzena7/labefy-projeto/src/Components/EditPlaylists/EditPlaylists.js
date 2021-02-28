@@ -1,6 +1,7 @@
 import React from 'react';
 import CatalogPlaylists from '../CatalogPlaylists/CatalogPlaylists';
 import ShowPlaylistSongs from '../ShowPlaylistSongs/ShowPlaylistSongs';
+import { LabefyMain } from '../../Constants/StyledConstants'
 
 class EditPlaylists extends React.Component {
   state = {
@@ -25,9 +26,11 @@ class EditPlaylists extends React.Component {
     };
 
     return (
-      <section>
-        {catalogConditional()}
-      </section>
+      <LabefyMain>
+        <section>
+          {catalogConditional()}
+        </section>
+      </LabefyMain>
     );
 
   };

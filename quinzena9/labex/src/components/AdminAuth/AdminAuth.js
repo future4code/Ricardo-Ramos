@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { goToAdminHome } from '../../routes/Coordinator';
 
-export default function AdminArea() {
+export default function AdminAuth() {
   const history = useHistory();
 
   return (
@@ -14,4 +14,3 @@ export default function AdminArea() {
     </>
   );
 };
-

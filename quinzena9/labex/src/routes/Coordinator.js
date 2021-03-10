@@ -2,8 +2,12 @@ export const goToHome = (history) => {
   history.push("/");
 };
 
-export const goToPublicArea = (history) => {
+export const goToPublicAuth = (history) => {
   history.push("/publico");
+};
+
+export const goToPublicHome = (history) => {
+  history.push("/publico/home");
 };
 
 export const goToTripList = (history) => {
@@ -14,7 +18,7 @@ export const goToTripForm = (history) => {
   history.push("/seja-nosso-viajante");
 };
 
-export const goToAdminArea = (history) => {
+export const goToAdminAuth = (history) => {
   history.push("/admin");
 };
 

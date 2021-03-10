@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import AdminArea from '../components/AdminArea/AdminArea';
+import AdminAuth from '../components/AdminAuth/AdminAuth';
 import AdminCandidatures from '../components/AdminCandidatures/AdminCandidatures';
 import AdminHome from '../components/AdminHome/AdminHome';
 import AdminNewTrip from '../components/AdminNewTrip/AdminNewTrip';
 import AdminTripList from '../components/AdminTripList/AdminTripList';
 import Home from '../components/Home/Home';
 import PageNotFound from '../components/PageNotFound/PageNotFound';
-import PublicArea from '../components/PublicArea/PublicArea';
+import PublicAuth from '../components/PublicAuth/PublicAuth';
+import PublicHome from '../components/PublicHome/PublicHome';
 import TripForm from '../components/TripForm/TripForm';
 import TripList from '../components/TripList/TripList';
 
@@ -20,7 +21,11 @@ export default function Router() {
         </Route>
 
         <Route exact path="/publico">
-          <PublicArea />
+          <PublicAuth />
+        </Route>
+
+        <Route exact path="/publico/home">
+          <PublicHome />
         </Route>
 
         <Route exact path="/lista-de-viagens">
@@ -32,7 +37,7 @@ export default function Router() {
         </Route>
 
         <Route exact path="/admin">
-          <AdminArea />
+          <AdminAuth />
         </Route>
 
         <Route exact path="/admin/home">

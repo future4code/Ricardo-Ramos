@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { goToTripForm, goToTripList } from '../../routes/Coordinator';
 
-export default function PublicArea() {
+export default function PublicHome() {
   const history = useHistory();
 
   return (

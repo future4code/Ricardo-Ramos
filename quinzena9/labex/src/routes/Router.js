@@ -7,7 +7,6 @@ import AdminNewTrip from '../components/AdminNewTrip/AdminNewTrip';
 import AdminTripList from '../components/AdminTripList/AdminTripList';
 import Home from '../components/Home/Home';
 import PageNotFound from '../components/PageNotFound/PageNotFound';
-import PublicAuth from '../components/PublicAuth/PublicAuth';
 import PublicHome from '../components/PublicHome/PublicHome';
 import TripForm from '../components/TripForm/TripForm';
 import TripList from '../components/TripList/TripList';
@@ -20,19 +19,15 @@ export default function Router() {
           <Home />
         </Route>
 
-        <Route exact path="/publico">
-          <PublicAuth />
-        </Route>
-
         <Route exact path="/publico/home">
           <PublicHome />
         </Route>
 
-        <Route exact path="/lista-de-viagens">
+        <Route exact path="/publico/lista-de-viagens">
           <TripList />
         </Route>
 
-        <Route exact path="/seja-nosso-viajante">
+        <Route exact path="/publico/seja-nosso-viajante">
           <TripForm />
         </Route>
 

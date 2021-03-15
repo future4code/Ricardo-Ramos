@@ -1,9 +1,11 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import UseProtectedPage from '../../hooks/UseProtectedPage';
 import { goToAdminHome } from '../../routes/Coordinator';
 
 export default function AdminCandidatures() {
   const history = useHistory();
+  UseProtectedPage();
 
   return (
     <>

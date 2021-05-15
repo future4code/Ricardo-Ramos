@@ -12,6 +12,7 @@ export const PlaylistSongsSection = styled.section`
 
   .titleAddSong {
     margin-top: 20px;
+    text-align: center;
   }
 
   .buttonAddNewSong {
@@ -27,6 +28,7 @@ export const PlaylistSongsSection = styled.section`
 
 export const NewSongInputs = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin-top: 16px;

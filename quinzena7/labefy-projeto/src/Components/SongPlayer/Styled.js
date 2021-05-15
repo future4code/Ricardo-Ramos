@@ -17,4 +17,8 @@ export const SongPlayerStyled = styled.div`
   align-items: center;
   gap: 8px;
   display: flex;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 `

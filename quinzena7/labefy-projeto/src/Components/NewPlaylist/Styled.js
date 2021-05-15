@@ -14,11 +14,18 @@ export const SectionNewPlaylist = styled.section`
 
   form {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
   }
 
   .inputNewPlaylistName {
+    height: 48px;
     text-align: center;
     width: 320px;
+
+    @media screen and (max-width: 400px) {
+      width: 280px;
+    }
   }
 `

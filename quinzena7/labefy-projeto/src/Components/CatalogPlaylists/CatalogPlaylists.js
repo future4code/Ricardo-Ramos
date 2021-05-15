@@ -16,7 +16,7 @@ class CatalogPlaylists extends React.Component {
       })
 
       .catch(() => {
-        alert("Erro ao criar playlist!")
+        alert("Erro ao carregar playlists!")
       })
   };
 
